@@ -1,0 +1,17 @@
+{
+  "name": "shelfsight",
+  "version": "1.0.0",
+  "description": "ShelfSight - AI-Powered Real-Time Retail Shelf Inventory Monitoring System",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node run-all.js",
+    "dev": "node run-all.js",
+    "backend": "npm --prefix backend start",
+    "frontend": "npm --prefix frontend dev",
+    "vision": "powershell -Command \"& vision_venv\\Scripts\\python.exe -m uvicorn app:app --host 0.0.0.0 --port 8000 --app-dir vision\"",
+    "seed": "npm --prefix backend run seed",
+    "test:backend": "npm --prefix backend test",
+    "build": "npm --prefix frontend run build"
+  }
+}

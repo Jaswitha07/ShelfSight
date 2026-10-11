@@ -1,0 +1,10 @@
+# ShelfSight Vision AI Configuration
+model_path: "yolov8s-worldv2.pt"
+conf_threshold: 0.015
+frame_skip: 3
+max_detections: 100
+use_reference_matching: true
+clip_threshold: 0.60
+device: "cpu"
+max_video_length_seconds: 120
+resize_width: 1280
